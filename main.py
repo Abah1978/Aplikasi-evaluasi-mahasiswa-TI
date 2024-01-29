@@ -41,7 +41,6 @@ with st.sidebar:
                             'SEMESTER 5', 'SEMESTER 6', 'SEMESTER 7'],
                            default_index=0)
 
-# Diabetes Prediction Page
 if (selected == 'SEMESTER 1'):
 
     # Page title
