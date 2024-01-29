@@ -78,7 +78,6 @@ if (selected == 'SEMESTER 1'):
 
         SEMESTER_1_prediction = SEMESTER_1.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri, Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman]])
 
-        if SEMESTER_1_prediction[0] == 1:
         if SEMESTER_1_prediction[0] == 0:
             SEMESTER_1_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
             MOTIVASI = (
