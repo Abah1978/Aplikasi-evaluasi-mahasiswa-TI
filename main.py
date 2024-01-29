@@ -34,10 +34,11 @@ SEMESTER_7 = joblib.load('MODEL_SEMESTER7_XGB.pkl')
 
 # Sidebar for navigation
 
+
 with st.sidebar:
     selected = option_menu('Prediksi Kelulusan Mahasiswa Teknik Industri UNTIRTA',
                            ['SEMESTER 1', 'SEMESTER 2', 'SEMESTER 3', 'SEMESTER 4',
-                                    'SEMESTER 5', 'SEMESTER 6', 'SEMESTER 7'],
+                            'SEMESTER 5', 'SEMESTER 6', 'SEMESTER 7'],
                            default_index=0)
 
 # Diabetes Prediction Page
@@ -78,7 +79,7 @@ if (selected == 'SEMESTER 1'):
 
         SEMESTER_1_prediction = SEMESTER_1.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri, Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman]])
 
-        if SEMESTER_1_prediction[0] == 1:
+        if SEMESTER_1_prediction[0] == 0:
             SEMESTER_1_PREDICTION = 'LULUS TIDAK TEPAT WAKTU'
             MOTIVASI = (
                 'Jangan patah semangat, terus perbaiki nilaimu. Ini baru semester 1 dan harus cepat beradaptasi.'
@@ -149,7 +150,7 @@ if (selected == 'SEMESTER 2'):
                                                      Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
                                                      Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur]])
 
-        if SEMESTER_2_prediction[0] == 0:
+        if SEMESTER_2_prediction[0] == 1:
             SEMESTER_2_PREDICTION = 'LULUS TIDAK TEPAT WAKTU'
             MOTIVASI = (
                 'Jangan patah semangat, terus perbaiki nilaimu.'
