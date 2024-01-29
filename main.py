@@ -78,17 +78,15 @@ if (selected == 'SEMESTER 1'):
 
         SEMESTER_1_prediction = SEMESTER_1.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri, Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman]])
 
-        if SEMESTER_1_prediction[0] == 0:
-            SEMESTER_1_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
+        if SEMESTER_1_prediction[0] == 1:
+            SEMESTER_1_PREDICTION = 'LULUS TIDAK TEPAT WAKTU'
             MOTIVASI = (
-                ' Jangan patah semangat, terus perbaiki nilaimu. Ini baru semester 1 dan harus cepat beradaptasi. '
+                'Jangan patah semangat, terus perbaiki nilaimu. Ini baru semester 1 dan harus cepat beradaptasi.'
                 'Jika kamu malas dan hanya membuang-buang waktu, kamu tak akan tahu bagaimana cara merengkuh peluang bahkan ketika peluang itu tepat berada di hadapan kamu.')
-            img3 = Image.open('SYARAT NILAI.jpg')
-            st.image(img3, use_column_width=True)        
         else:
-            SEMESTER_1_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU!'
+            SEMESTER_1_PREDICTION = 'LULUS TEPAT WAKTU'
             MOTIVASI = (
-                ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
+                'Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
                 'Kamu bisa mengambil lebih dari 20 sks untuk semester 2. Tidak apa-apa untuk merayakan kesuksesan, tapi lebih penting untuk memperhatikan pelajaran tentang kegagalan.')
 
         pesan_hasil = f'{SEMESTER_1_PREDICTION}, {MOTIVASI}'
