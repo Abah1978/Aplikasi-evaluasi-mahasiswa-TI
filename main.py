@@ -28,7 +28,7 @@ SEMESTER_1 = joblib.load('MODEL_SEMESTER1_SVM.pkl')
 SEMESTER_2 = joblib.load('MODEL_SEMESTER2_SVM.pkl')
 SEMESTER_3 = joblib.load('MODEL_SEMESTER3_XGB.pkl')
 SEMESTER_4 = joblib.load('MODEL_SEMESTER4_LR.pkl')
-SEMESTER_5 = joblib.load('MODEL_SEMESTER5_RF(3).pkl')
+SEMESTER_5 = joblib.load('MODEL_SEMESTER5_RF (2).pkl')
 SEMESTER_6 = joblib.load('MODEL_SEMESTER6_XGB.pkl')
 SEMESTER_7 = joblib.load('MODEL_SEMESTER7_XGB.pkl')
 
