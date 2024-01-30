@@ -437,6 +437,12 @@ if (selected == 'SEMESTER 5'):
     '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Perancangan_Tata_Letak_Fasilitas = st.selectbox('Perancangan Tata Letak Fasilitas', (
     '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
+    Kerja_Praktek = st.selectbox('Kerja Praktek', (
+    '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
+    Ekonomika_dan_Ekonomi_Teknik = st.selectbox('Ekonomika dan Ekonomi Teknik', (
+    '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
+    Perancangan_dan_Manajemen_Organisasi_Industri = st.selectbox('Perancangan dan Manajemen Organisasi Industri', (
+    '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Simulasi_Sistem = st.selectbox('Simulasi Sistem',
                                    ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Sistem_Produksi = st.selectbox('Sistem Produksi',
@@ -447,12 +453,7 @@ if (selected == 'SEMESTER 5'):
     '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Praktikum_Terintegarasi = st.selectbox('Praktikum Terintegrasi',
                                            ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
-    Kerja_Praktek = st.selectbox('Kerja Praktek', (
-    '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
-    Ekonomika_dan_Ekonomi_Teknik = st.selectbox('Ekonomika dan Ekonomi Teknik', (
-    '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
-    Perancangan_dan_Manajemen_Organisasi_Industri = st.selectbox('Perancangan dan Manajemen Organisasi Industri', (
-    '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
+
 
     # Code for prediction
     SEMESTER_5_PREDICTION = ''
