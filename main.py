@@ -4,7 +4,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 
 # Judul aplikasi
-st.title('Prediksi Kelulusan Mahasiswa TI UNTIRTA')
+st.title('Aplikasi Klasifikasi Kelulusan Mahasiswa TI UNTIRTA')
 
 # Masukkin gambar
 st.subheader('Keterangan Nilai Bobot Mata Kuliah')
@@ -36,7 +36,7 @@ SEMESTER_7 = joblib.load('MODEL_SEMESTER7_XGB.pkl')
 # Sidebar for navigation
 
 with st.sidebar:
-    selected = option_menu('Prediksi Kelulusan Mahasiswa Teknik Industri UNTIRTA',
+    selected = option_menu('Klasifikasi Kelulusan Mahasiswa Teknik Industri UNTIRTA',
                            ['SEMESTER 1', 'SEMESTER 2', 'SEMESTER 3', 'SEMESTER 4',
                             'SEMESTER 5', 'SEMESTER 6', 'SEMESTER 7'],
                            default_index=0)
@@ -44,7 +44,7 @@ with st.sidebar:
 if (selected == 'SEMESTER 1'):
 
     # Page title
-    st.title('Prediksi Kelulusan Mahasiswa Semester 1 Teknik Industri UNTIRTA')
+    st.title('Klasifikasi Kelulusan Mahasiswa Semester 1 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Kalkulus_1 = st.selectbox('Kalkulus 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
