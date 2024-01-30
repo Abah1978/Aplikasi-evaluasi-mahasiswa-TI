@@ -60,7 +60,7 @@ if (selected == 'SEMESTER 1'):
 
     # Creating a button for prediction
 
-    if st.button('PREDIKSI KELULUSAN'):
+    if st.button('KLASIFIKASI KELULUSAN'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -96,7 +96,7 @@ if (selected == 'SEMESTER 1'):
 if (selected == 'SEMESTER 2'):
 
     # Page title
-    st.title('Prediksi Kelulusan Mahasiswa SEMESTER 2 Teknik Industri UNTIRTA')
+    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 2 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Kalkulus_1 = st.selectbox('Kalkulus 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -120,7 +120,7 @@ if (selected == 'SEMESTER 2'):
 
     # Creating a button for prediction
 
-    if st.button('PREDIKSI KELULUSAN'):
+    if st.button('KLASIFIKASI KELULUSAN'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -172,7 +172,7 @@ if (selected == 'SEMESTER 2'):
 if (selected == 'SEMESTER 3'):
 
     # Page title
-    st.title('Prediksi Kelulusan Mahasiswa SEMESTER 3 Teknik Industri UNTIRTA')
+    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 3 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Kalkulus_1 = st.selectbox('Kalkulus 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -203,7 +203,7 @@ if (selected == 'SEMESTER 3'):
 
     # Creating a button for prediction
 
-    if st.button('PREDIKSI KELULUSAN'):
+    if st.button('KLASIFIKASI KELULUSAN'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -263,7 +263,7 @@ if (selected == 'SEMESTER 3'):
 if (selected == 'SEMESTER 4'):
 
     # Page title
-    st.title('Prediksi Kelulusan Mahasiswa SEMESTER 4 Teknik Industri UNTIRTA')
+    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 4 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Kalkulus_1 = st.selectbox('Kalkulus 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -302,7 +302,7 @@ if (selected == 'SEMESTER 4'):
 
     # Creating a button for prediction
 
-    if st.button('PREDIKSI KELULUSAN'):
+    if st.button('KLASIFIKASI KELULUSAN'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -371,7 +371,7 @@ if (selected == 'SEMESTER 4'):
 if (selected == 'SEMESTER 5'):
 
     # Page title
-    st.title('Prediksi Kelulusan Mahasiswa SEMESTER 5 Teknik Industri UNTIRTA')
+    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 5 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1', ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Kalkulus_1 = st.selectbox('Kalkulus 1', ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -418,7 +418,7 @@ if (selected == 'SEMESTER 5'):
 
     # Creating a button for prediction
 
-    if st.button('PREDIKSI KELULUSAN'):
+    if st.button('KLASIFIKASI KELULUSAN'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -499,7 +499,7 @@ if (selected == 'SEMESTER 5'):
 if (selected == 'SEMESTER 6'):
 
     # Page title
-    st.title('Prediksi Kelulusan Mahasiswa SEMESTER 6 Teknik Industri UNTIRTA')
+    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 6 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1',
                                   ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -587,7 +587,7 @@ if (selected == 'SEMESTER 6'):
 
     # Creating a button for prediction
 
-    if st.button('PREDIKSI KELULUSAN'):
+    if st.button('KLASIFIKASI KELULUSAN'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -674,7 +674,7 @@ if (selected == 'SEMESTER 6'):
 if (selected == 'SEMESTER 7'):
 
     # Page title
-    st.title('Prediksi Kelulusan Mahasiswa SEMESTER 7 Teknik Industri UNTIRTA')
+    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 7 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1',
                                   ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -766,7 +766,7 @@ if (selected == 'SEMESTER 7'):
 
     # Creating a button for prediction
 
-    if st.button('PREDIKSI KELULUSAN'):
+    if st.button('Klasifikasi KELULUSAN'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
