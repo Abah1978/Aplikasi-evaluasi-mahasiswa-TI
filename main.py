@@ -167,14 +167,14 @@ if (selected == 'SEMESTER 2'):
                         ' Jangan patah semangat, terus perbaiki nilaimu.'
                         ' Jika kamu malas dan hanya membuang-buang waktu, kamu tak akan tahu bagaimana cara melihat peluang bahkan ketika peluang itu tepat berada di hadapan kamu. '
                         ' Bukan nasib yang menentukan hidupmu, tapi kamu sendirilah yang menentukan masa depanmu. '
-                        ' Rasa malas akan menjadi penghalang rezeki dari yang Tuhan berikan.')
+                        ' Rasa malas akan menjadi penghalang rezeki dari yang Tuhan berikan.'
                         ' --- '
                         ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 3. '
                         ' Nilai pada mata kuliah Kalkulus 2 menjadi prasyarat pada mata kuliah Kalkulus 3 dan Statistika 1. '
                         ' Nilai pada mata kuliah Kuliah Aljabar Linear menjadi prasayarat pada mata kuliah Penelitian Operasional 1 . '
                         ' Nilai pada mata kuliah Pengantar Teknik Industri menjadi prasyarat pada mata kuliah Ergonomi 1 dan harus diambali bersamaan dengan mata kuliah Statistika 1'
                         ' Nilai pada mata kuliah Proses manufaktur menjadi prasyarat pada mata kuliah Perencanaan dan Pengendalian Produksi dan harus diambil bersamaan dengan mata kuliah Ergonomi 1.'
-                        ' Mata Kuliah Analisis Biaya dan atau Sistem Rantai Pasok harus diambil berdasamaan dengan mata kulliah Perencanaan dan Pengendalian Produksi. '
+                        ' Mata Kuliah Analisis Biaya dan atau Sistem Rantai Pasok harus diambil berdasamaan dengan mata kulliah Perencanaan dan Pengendalian Produksi. ')
             img3 = Image.open('SYARAT NILAI.jpg')
             st.image(img3, use_column_width=True) 
         else:
