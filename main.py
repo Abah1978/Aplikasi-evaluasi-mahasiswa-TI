@@ -85,7 +85,7 @@ if (selected == 'SEMESTER 1'):
                         ' Nilai pada mata kulaih Menggambar Teknik menjadi prasyarat untuk  mata kuliah mekanika teknik. '
                         ' Mata kuliah kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
                         ' Nilai pada mata kuliah material teknik menjadi prasyarat pada mata kuliah proses manufaktur dan harus diambil berbarengan dengan mata kuliah mekanika teknik. '
-                        ' Mata Kuliah praktikum oroses manufaktur harus diambil bersamaan dengan mata kuliah proses ')
+                        ' Mata Kuliah praktikum proses manufaktur harus diambil bersamaan dengan mata kuliah proses ')
   
         else:
             SEMESTER_1_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS'
