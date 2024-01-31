@@ -78,8 +78,8 @@ if (selected == 'SEMESTER 1'):
 
         SEMESTER_1_prediction = SEMESTER_1.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri, Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman]])
         
-        if SEMESTER_1_prediction[0] == 0:
-            SEMESTER_1_PREDICTION = 'aaaaaaaaaaaMASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
+        if SEMESTER_1_prediction[0] == 1:
+            SEMESTER_1_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
             MOTIVASI = (' Ada beberapa mata kuliah yang menjadi prasayarat dalam mata kuliah lain dan harus diperhatikan untuk menaikan nilai IPK.')
   
         else:
