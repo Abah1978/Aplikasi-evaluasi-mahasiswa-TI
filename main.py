@@ -80,12 +80,22 @@ if (selected == 'SEMESTER 1'):
         
         if SEMESTER_1_prediction[0] == 1:
             SEMESTER_1_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
-            MOTIVASI = (' Ada beberapa mata kuliah yang menjadi prasayarat dalam mata kuliah lain dan harus diperhatikan untuk menaikan nilai IPK.')
+            MOTIVASI = (' Ada beberapa mata kuliah yang menjadi prasayarat dalam mata kuliah lain dan harus diperhatikan untuk menaikan nilai IPK.'
+                        ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 2. '
+                        ' Nilai pada mata kulaih Menggambar Teknik menjadi prasyarat untuk  mata kuliah mekanika teknik. '
+                        ' Mata kuliah kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
+                        ' Nilai pada mata kuliah material teknik menjadi prasyarat pada mata kuliah proses manufaktur dan harus diambil berbarengan dengan mata kuliah mekanika teknik. '
+                        ' Mata Kuliah praktikum oroses manufaktur harus diambil bersamaan dengan mata kuliah proses ')
   
         else:
             SEMESTER_1_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS'
             MOTIVASI = (
-                'Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.')
+                        ' Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
+                        ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 2. '
+                        ' Nilai pada mata kulaih Menggambar Teknik menjadi prasyarat untuk  mata kuliah mekanika teknik. '
+                        ' Mata kuliah kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
+                        ' Nilai pada mata kuliah material teknik menjadi prasyarat pada mata kuliah proses manufaktur dan harus diambil berbarengan dengan mata kuliah mekanika teknik. '
+                        ' Mata Kuliah praktikum oroses manufaktur harus diambil bersamaan dengan mata kuliah proses ')
 
         pesan_hasil = f'{SEMESTER_1_PREDICTION}, {MOTIVASI}'
 
