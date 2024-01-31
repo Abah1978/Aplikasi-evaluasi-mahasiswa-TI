@@ -60,7 +60,7 @@ if (selected == 'SEMESTER 1'):
 
     # Creating a button for prediction
 
-    if st.button('KLASIFIKASI KELULUSAN'):
+    if st.button('EVALUASI'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -132,7 +132,7 @@ if (selected == 'SEMESTER 2'):
 
     # Creating a button for prediction
 
-    if st.button('KLASIFIKASI KELULUSAN'):
+    if st.button('EVALUASI'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -161,14 +161,20 @@ if (selected == 'SEMESTER 2'):
                                                      Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
                                                      Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur]])
 
-        if SEMESTER_2_prediction[0] == 1:
-            SEMESTER_2_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
+        if SEMESTER_2_prediction[0] == 0:
+            SEMESTER_2_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
             MOTIVASI = (
-                ' Jangan patah semangat, terus perbaiki nilaimu.'
-                'Jika kamu malas dan hanya membuang-buang waktu, kamu tak akan tahu bagaimana cara melihat peluang bahkan '
-                'ketika peluang itu tepat berada di hadapan kamu. '
-                'Bukan nasib yang menentukan hidupmu, tapi kamu sendirilah yang menentukan masa depanmu. '
-                'Rasa malas akan menjadi penghalang rezeki dari yang Tuhan berikan.')
+                        ' Jangan patah semangat, terus perbaiki nilaimu.'
+                        ' Jika kamu malas dan hanya membuang-buang waktu, kamu tak akan tahu bagaimana cara melihat peluang bahkan ketika peluang itu tepat berada di hadapan kamu. '
+                        ' Bukan nasib yang menentukan hidupmu, tapi kamu sendirilah yang menentukan masa depanmu. '
+                        ' Rasa malas akan menjadi penghalang rezeki dari yang Tuhan berikan.')
+                        ' --- '
+                        ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 3. '
+                        ' Nilai pada mata kuliah Kalkulus 2 menjadi prasyarat pada mata kuliah Kalkulus 3 dan Statistika 1. '
+                        ' Nilai pada mata kuliah Kuliah Aljabar Linear menjadi prasayarat pada mata kuliah Penelitian Operasional 1 . '
+                        ' Nilai pada mata kuliah Pengantar Teknik Industri menjadi prasyarat pada mata kuliah Ergonomi 1 dan harus diambali bersamaan dengan mata kuliah Statistika 1'
+                        ' Nilai pada mata kuliah Proses manufaktur menjadi prasyarat pada mata kuliah Perencanaan dan Pengendalian Produksi dan harus diambil bersamaan dengan mata kuliah Ergonomi 1.'
+                        ' Mata Kuliah Analisis Biaya dan atau Sistem Rantai Pasok harus diambil berdasamaan dengan mata kulliah Perencanaan dan Pengendalian Produksi. '
             img3 = Image.open('SYARAT NILAI.jpg')
             st.image(img3, use_column_width=True) 
         else:
@@ -180,6 +186,9 @@ if (selected == 'SEMESTER 2'):
         pesan_hasil = f'{SEMESTER_2_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img5 = Image.open('MKP_SEM3..jpg')
+        st.image(img5, use_column_width=True)
 
 if (selected == 'SEMESTER 3'):
 
