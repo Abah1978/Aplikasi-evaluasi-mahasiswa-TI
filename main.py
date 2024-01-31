@@ -4,7 +4,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 
 # Judul aplikasi
-st.title('Aplikasi Klasifikasi Kelulusan Mahasiswa TI UNTIRTA')
+st.title('Aplikasi Evaluasi Pembelajaran Mahasiswa TI UNTIRTA')
 
 # Masukkin gambar
 st.subheader('Keterangan Nilai Bobot Mata Kuliah')
@@ -36,7 +36,7 @@ SEMESTER_7 = joblib.load('MODEL_SEMESTER7_RF.pkl')
 # Sidebar for navigation
 
 with st.sidebar:
-    selected = option_menu('Klasifikasi Kelulusan Mahasiswa Teknik Industri UNTIRTA',
+    selected = option_menu('Pilihan Semester',
                            ['SEMESTER 1', 'SEMESTER 2', 'SEMESTER 3', 'SEMESTER 4',
                             'SEMESTER 5', 'SEMESTER 6', 'SEMESTER 7'],
                            default_index=0)
@@ -44,7 +44,7 @@ with st.sidebar:
 if (selected == 'SEMESTER 1'):
 
     # Page title
-    st.title('Klasifikasi Kelulusan Mahasiswa Semester 1 Teknik Industri UNTIRTA')
+    st.title('Evaluasi Pembelajaran Mahasiswa Semester 1 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Kalkulus_1 = st.selectbox('Kalkulus 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -80,7 +80,8 @@ if (selected == 'SEMESTER 1'):
         
         if SEMESTER_1_prediction[0] == 1:
             SEMESTER_1_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
-            MOTIVASI = (' Ada beberapa mata kuliah yang menjadi prasayarat dalam mata kuliah lain dan harus diperhatikan untuk menaikan nilai IPK.'
+            MOTIVASI = (' '
+                        ' Ada beberapa mata kuliah yang menjadi prasayarat dalam mata kuliah lain dan harus diperhatikan untuk menaikan nilai IPK.'
                         ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 2. '
                         ' Nilai pada mata kulaih Menggambar Teknik menjadi prasyarat untuk  mata kuliah mekanika teknik. '
                         ' Mata kuliah kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
@@ -89,7 +90,7 @@ if (selected == 'SEMESTER 1'):
   
         else:
             SEMESTER_1_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS'
-            MOTIVASI = (
+            MOTIVASI = (' '
                         ' Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
                         ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 2. '
                         ' Nilai pada mata kulaih Menggambar Teknik menjadi prasyarat untuk  mata kuliah mekanika teknik. '
