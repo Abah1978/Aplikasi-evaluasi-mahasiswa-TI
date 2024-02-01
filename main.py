@@ -83,32 +83,35 @@ if (selected == 'SEMESTER 1'):
             MOTIVASI = (' '
                         ' Ada beberapa mata kuliah yang menjadi prasayarat dalam mata kuliah lain dan harus diperhatikan untuk menaikan nilai IPK.'
                         ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 2 : '
-                        ' Nilai pada mata kulaih Menggambar Teknik menjadi prasyarat untuk  mata kuliah mekanika teknik. '
-                        ' Mata kuliah kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
-                        ' Nilai pada mata kuliah material teknik menjadi prasyarat pada mata kuliah proses manufaktur dan harus diambil berbarengan dengan mata kuliah mekanika teknik. '
-                        ' Mata Kuliah praktikum proses manufaktur harus diambil bersamaan dengan mata kuliah proses ')
+                        ' Nilai pada mata kuliah Menggambar Teknik menjadi prasyarat untuk  mata kuliah Mekanika Teknik. '
+                        ' Mata kuliah Kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
+                        ' Nilai pada mata kuliah Material Teknik menjadi prasyarat pada mata kuliah Proses Manufaktur dan harus diambil berbarengan dengan mata kuliah Mekanika Teknik. '
+                        ' Mata kuliah Praktikum Proses Manufaktur harus diambil bersamaan dengan mata kuliah Proses Manufaktur. ')
   
         else:
-            SEMESTER_1_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS'
+            SEMESTER_1_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 2'
             MOTIVASI = (' '
                         ' Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
-                        ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 2 : '
-                        ' Nilai pada mata kulaih Menggambar Teknik menjadi prasyarat untuk  mata kuliah mekanika teknik. '
-                        ' Mata kuliah kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
-                        ' Nilai pada mata kuliah material teknik menjadi prasyarat pada mata kuliah proses manufaktur dan harus diambil berbarengan dengan mata kuliah mekanika teknik. '
-                        ' Mata Kuliah praktikum oroses manufaktur harus diambil bersamaan dengan mata kuliah proses ')
-
+                        ' Berikut mata kuliah menjadi prasyarat dan setara saat di semester 2 : '
+                           ' Nilai pada mata kuliah Menggambar Teknik menjadi prasyarat untuk  mata kuliah Mekanika Teknik. '
+                        ' Mata kuliah Kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
+                        ' Nilai pada mata kuliah Material Teknik menjadi prasyarat pada mata kuliah Proses Manufaktur dan harus diambil berbarengan dengan mata kuliah Mekanika Teknik. '
+                        ' Mata kuliah Praktikum Proses Manufaktur harus diambil bersamaan dengan mata kuliah Proses Manufaktur. ')
+            
         pesan_hasil = f'{SEMESTER_1_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
-
+        
+        img3 = Image.open('SYARAT NILAI.jpg')
+        st.image(img3, use_column_width=True) 
+        
         img4 = Image.open('MKP_SEM2.jpg')
         st.image(img4, use_column_width=True)
         
 if (selected == 'SEMESTER 2'):
 
     # Page title
-    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 2 Teknik Industri UNTIRTA')
+    st.title('Evaluasi Pembelajaran Mahasiswa SEMESTER 2 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Kalkulus_1 = st.selectbox('Kalkulus 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -174,19 +177,29 @@ if (selected == 'SEMESTER 2'):
                         ' Nilai pada mata kuliah Kuliah Aljabar Linear menjadi prasayarat pada mata kuliah Penelitian Operasional 1 . '
                         ' Nilai pada mata kuliah Pengantar Teknik Industri menjadi prasyarat pada mata kuliah Ergonomi 1 dan harus diambali bersamaan dengan mata kuliah Statistika 1'
                         ' Nilai pada mata kuliah Proses manufaktur menjadi prasyarat pada mata kuliah Perencanaan dan Pengendalian Produksi dan harus diambil bersamaan dengan mata kuliah Ergonomi 1.'
-                        ' Mata Kuliah Analisis Biaya dan atau Sistem Rantai Pasok harus diambil berdasamaan dengan mata kulliah Perencanaan dan Pengendalian Produksi. ')
-            img3 = Image.open('SYARAT NILAI.jpg')
-            st.image(img3, use_column_width=True) 
+                        ' Mata Kuliah Analisis Biaya dan atau Sistem Rantai Pasok harus diambil bersamaan dengan mata kulliah Perencanaan dan Pengendalian Produksi. ')
+
         else:
-            SEMESTER_2_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU!'
+            SEMESTER_2_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 3'
             MOTIVASI = (
-                ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
-                'Kamu bisa mengambil lebih dari 20 sks untuk semester 3. Menjadi mahasiswa tidaklah mudah, namun semua bisa dilalui oleh mereka yang semangatnya yang tak akan goyah')
+                        ' Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '             
+                        ' Menjadi mahasiswa tidaklah mudah, namun semua bisa dilalui oleh mereka yang semangatnya yang tak akan goyah')
+                        ' --- '
+                        ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 3 :'
+                        ' Nilai pada mata kuliah Kalkulus 2 menjadi prasyarat pada mata kuliah Kalkulus 3 dan Statistika 1. '
+                        ' Nilai pada mata kuliah Kuliah Aljabar Linear menjadi prasayarat pada mata kuliah Penelitian Operasional 1 . '
+                        ' Nilai pada mata kuliah Pengantar Teknik Industri menjadi prasyarat pada mata kuliah Ergonomi 1 dan harus diambali bersamaan dengan mata kuliah Statistika 1'
+                        ' Nilai pada mata kuliah Proses manufaktur menjadi prasyarat pada mata kuliah Perencanaan dan Pengendalian Produksi dan harus diambil bersamaan dengan mata kuliah Ergonomi 1.'
+                        ' Mata Kuliah Analisis Biaya dan atau Sistem Rantai Pasok harus diambil bersamaan dengan mata kulliah Perencanaan dan Pengendalian Produksi. ')
+
 
         pesan_hasil = f'{SEMESTER_2_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
 
+        img3 = Image.open('SYARAT NILAI.jpg')
+        st.image(img3, use_column_width=True) 
+        
         img5 = Image.open('MKP_SEM3..jpg')
         st.image(img5, use_column_width=True)
 
