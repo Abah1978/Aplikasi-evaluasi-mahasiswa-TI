@@ -419,7 +419,7 @@ if (selected == 'SEMESTER 4'):
                 ' Nilai mata kuliah Pemodelan Sistem menjadi prasyarat untuk mata kuliah Praktikum Terintegrasi dan dapat diambil bersamaan dengan mata kuliah Simulasi Sistem dan Keselamatan dan Kesehatan Kerja. '
                 ' Nilai mata kuliah Ergonomi 2 menjadi prasyarat untuk mata kuliah Keselamatan dan Kesehatan Kerja dan Perilaku Organisasi.  '
                 ' Nilai mata kuliah Sistem Rantai Pasok, Pengendalian dan Penjaminan Mutu, dan Pemodelan Sistem menjadi prasyarat untuk mata kuliah Perancangan Tata Letak Fasilitas dan dapat diambil bersamaan dengan mata uliah Simulasi Sistem.  '
-                ' Mata kuliah Perancangan Tata Letak Fasilitas dapat diambil bersamaan dengan mata kuliah Praktikum Tata Letak Fasilitas.  '
+                ' Mata kuliah Perancangan Tata Letak Fasilitas dapat diambil bersamaan dengan mata kuliah Praktikum Tata Letak Fasilitas. ' )
 
         else:
             SEMESTER_4_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 5'
@@ -433,7 +433,7 @@ if (selected == 'SEMESTER 4'):
                 ' Nilai mata kuliah Pemodelan Sistem menjadi prasyarat untuk mata kuliah Praktikum Terintegrasi dan dapat diambil bersamaan dengan mata kuliah Simulasi Sistem dan Keselamatan dan Kesehatan Kerja. '
                 ' Nilai mata kuliah Ergonomi 2 menjadi prasyarat untuk mata kuliah Keselamatan dan Kesehatan Kerja dan Perilaku Organisasi.  '
                 ' Nilai mata kuliah Sistem Rantai Pasok, Pengendalian dan Penjaminan Mutu, dan Pemodelan Sistem menjadi prasyarat untuk mata kuliah Perancangan Tata Letak Fasilitas dan dapat diambil bersamaan dengan mata uliah Simulasi Sistem.  '
-                ' Mata kuliah Perancangan Tata Letak Fasilitas dapat diambil bersamaan dengan mata kuliah Praktikum Tata Letak Fasilitas.  '
+                ' Mata kuliah Perancangan Tata Letak Fasilitas dapat diambil bersamaan dengan mata kuliah Praktikum Tata Letak Fasilitas. ' )
     
         pesan_hasil = f'{SEMESTER_4_PREDICTION}, {MOTIVASI}'
 
