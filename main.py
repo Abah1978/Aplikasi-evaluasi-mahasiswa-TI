@@ -93,7 +93,7 @@ if (selected == 'SEMESTER 1'):
             MOTIVASI = (' '
                         ' Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
                         ' Berikut mata kuliah menjadi prasyarat dan setara saat di semester 2 : '
-                           ' Nilai pada mata kuliah Menggambar Teknik menjadi prasyarat untuk  mata kuliah Mekanika Teknik. '
+                        ' Nilai pada mata kuliah Menggambar Teknik menjadi prasyarat untuk  mata kuliah Mekanika Teknik. '
                         ' Mata kuliah Kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
                         ' Nilai pada mata kuliah Material Teknik menjadi prasyarat pada mata kuliah Proses Manufaktur dan harus diambil berbarengan dengan mata kuliah Mekanika Teknik. '
                         ' Mata kuliah Praktikum Proses Manufaktur harus diambil bersamaan dengan mata kuliah Proses Manufaktur. ')
@@ -293,7 +293,7 @@ if (selected == 'SEMESTER 3'):
                 ' Mata kuliah Pemroragaman Komputer menjadi prasyarat mata kuliah Analisis dan Perancangan Sistem Informasi dan harus diambil setara dengan mata kuliah Pemodelan Sistem. '
                 ' Mata Kuliah Analisis dan Perancangan Sistem Informasi harus diambil setara dengan mata kuliah Praktikum Analisis dan Perancangan Sistem Informasi. ')
         else:
-            SEMESTER_3_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 4.   '
+            SEMESTER_3_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 4. '
             MOTIVASI = (
                 ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
                 ' "Jika kita terus melakukan apa yang kita lakukan, kita juga terus akan mendapatkan apa yang kita dapatkan" '
@@ -321,7 +321,7 @@ if (selected == 'SEMESTER 3'):
 if (selected == 'SEMESTER 4'):
 
     # Page title
-    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 4 Teknik Industri UNTIRTA')
+    st.title('Evaluasi Pembelajaran Mahasiswa SEMESTER 4 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Kalkulus_1 = st.selectbox('Kalkulus 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -360,7 +360,7 @@ if (selected == 'SEMESTER 4'):
 
     # Creating a button for prediction
 
-    if st.button('KLASIFIKASI KELULUSAN'):
+    if st.button('EVALUASI'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -409,22 +409,41 @@ if (selected == 'SEMESTER 4'):
                                                      Analitika_Data, Praktikum_Analisis_dan_Perancangan_Sistem_Informasi, Statistika_2]])
 
         if SEMESTER_4_prediction[0] == 0:
-            SEMESTER_4_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
+            SEMESTER_4_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI  '
             MOTIVASI = (
-                ' Jangan patah semangat, terus perbaiki nilaimu.')
-            img3 = Image.open('SYARAT NILAI.jpg')
-            st.image(img3, use_column_width=True) 
+                ' Jangan patah semangat, terus perbaiki nilaimu. '
+                ' ---- '
+                ' Berikut mata kuliah menjadi prasyarat dan setara saat di semester 5 : '
+                ' Nilai mata kuliah Pengendalian dan Penjaminan Mutu dan Sistem rantai Pasok menjadi prasyarat untuk mata kuliah Perancangan dan Pengembangan Produk. '
+                ' Nilai mata kuliah Statistika 2 dan Perencanaan dan Pengendalian Produksi menjadi prasyarat untuk mata kuliah Simulasi Sistem. '
+                ' Nilai mata kuliah Pemodelan Sistem menjadi prasyarat untuk mata kuliah Praktikum Terintegrasi dan dapat diambil bersamaan dengan mata kuliah Simulasi Sistem dan Keselamatan dan Kesehatan Kerja. '
+                ' Nilai mata kuliah Ergonomi 2 menjadi prasyarat untuk mata kuliah Keselamatan dan Kesehatan Kerja dan Perilaku Organisasi.  '
+                ' Nilai mata kuliah Sistem Rantai Pasok, Pengendalian dan Penjaminan Mutu, dan Pemodelan Sistem menjadi prasyarat untuk mata kuliah Perancangan Tata Letak Fasilitas dan dapat diambil bersamaan dengan mata uliah Simulasi Sistem.  '
+                ' Mata kuliah Perancangan Tata Letak Fasilitas dapat diambil bersamaan dengan mata kuliah Praktikum Tata Letak Fasilitas.  '
 
         else:
-            SEMESTER_4_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU!'
+            SEMESTER_4_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 5'
             MOTIVASI = (
                 ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
-                'Kamu bisa mengambil lebih dari 20 sks untuk semester 5. '
-                'Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikuti teman!!')
-
+                ' Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikuti teman!! '
+                ' ---- '
+                ' Berikut mata kuliah menjadi prasyarat dan setara saat di semester 5 : '
+                ' Nilai mata kuliah Pengendalian dan Penjaminan Mutu dan Sistem rantai Pasok menjadi prasyarat untuk mata kuliah Perancangan dan Pengembangan Produk. '
+                ' Nilai mata kuliah Statistika 2 dan Perencanaan dan Pengendalian Produksi menjadi prasyarat untuk mata kuliah Simulasi Sistem. '
+                ' Nilai mata kuliah Pemodelan Sistem menjadi prasyarat untuk mata kuliah Praktikum Terintegrasi dan dapat diambil bersamaan dengan mata kuliah Simulasi Sistem dan Keselamatan dan Kesehatan Kerja. '
+                ' Nilai mata kuliah Ergonomi 2 menjadi prasyarat untuk mata kuliah Keselamatan dan Kesehatan Kerja dan Perilaku Organisasi.  '
+                ' Nilai mata kuliah Sistem Rantai Pasok, Pengendalian dan Penjaminan Mutu, dan Pemodelan Sistem menjadi prasyarat untuk mata kuliah Perancangan Tata Letak Fasilitas dan dapat diambil bersamaan dengan mata uliah Simulasi Sistem.  '
+                ' Mata kuliah Perancangan Tata Letak Fasilitas dapat diambil bersamaan dengan mata kuliah Praktikum Tata Letak Fasilitas.  '
+    
         pesan_hasil = f'{SEMESTER_4_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img3 = Image.open('SYARAT NILAI.jpg')
+        st.image(img3, use_column_width=True) 
+
+        img7 = Image.open('MKP_SEM5.jpg')
+        st.image(img7, use_column_width=True)
 
 if (selected == 'SEMESTER 5'):
 
