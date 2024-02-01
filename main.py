@@ -206,7 +206,7 @@ if (selected == 'SEMESTER 2'):
 if (selected == 'SEMESTER 3'):
 
     # Page title
-    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 3 Teknik Industri UNTIRTA')
+    st.title('Evaluasi Pembelajaran Mahasiswa SEMESTER 3 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Kalkulus_1 = st.selectbox('Kalkulus 1', ('4.00','3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -237,7 +237,7 @@ if (selected == 'SEMESTER 3'):
 
     # Creating a button for prediction
 
-    if st.button('KLASIFIKASI KELULUSAN'):
+    if st.button('EVALUASI'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -277,22 +277,47 @@ if (selected == 'SEMESTER 3'):
                                                      Ergonomi_1, Kalkulus_3, Statistika_1]])
 
         if SEMESTER_3_prediction[0] == 0:
-            SEMESTER_3_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
+            SEMESTER_3_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI  '
             MOTIVASI = (
                 ' Jangan patah semangat, terus perbaiki nilaimu. '
-                'Jika tak ingin tertinggal dengan temanmu hilangkan rasa malas, '
-                'jadilah orang yang dikagumi karena kesuksesanmu nantinya bukan orang yang direndahkan')
-            img3 = Image.open('SYARAT NILAI.jpg')
-            st.image(img3, use_column_width=True) 
+                ' Jika tak ingin tertinggal dengan temanmu hilangkan rasa malas, '
+                ' Jadilah orang yang dikagumi karena kesuksesanmu nantinya bukan orang yang direndahkan'
+                ' --- '
+                ' Berikut mata kuliah menjadi prasyarat dan setara saat di semester 4 : '
+                ' Mata kuliah Pemodelan Sistem harus diambil setara dengan mata kuliah Penelitian Operasional dan Analitika Data. ' 
+                ' Mata kuliah Penelitian Operasional 1 menjadi prasyarat untuk mata kuliah Penelitian Operasional 2. '
+                ' Mata kuliah Statistika 1 menjadi prasayarat untuk mata kuliah Statistika 2.  '
+                ' Mata kuliah Perencanaan dan Pengendalian Produksi menjadi prasayarat untuk mata kuliah Pengendalian dan Penjaminan Mutu dan harus diambil bersamaan dengan Statistika 2.  '
+                ' Mata kuliah Ergonomi 1 menjadi prasyarat untuk mata kuliah Ergonomi 2. '
+                ' Mata kuliah Statistika 1 dan Pemrograman Komputer menjadi prasyarat untuk mata kuliah Analitika Data. '
+                ' Mata kuliah Pemroragaman Komputer menjadi prasyarat mata kuliah Analisis dan Perancangan Sistem Informasi dan harus diambil setara dengan mata kuliah Pemodelan Sistem. '
+                ' Mata Kuliah Analisis dan Perancangan Sistem Informasi harus diambil setara dengan mata kuliah Praktikum Analisis dan Perancangan Sistem Informasi. '
+
         else:
-            SEMESTER_3_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU!'
+            SEMESTER_3_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 4.   '
             MOTIVASI = (
                 ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
-                'Kamu bisa mengambil lebih dari 20 sks untuk semester 4. "Jika kita terus melakukan apa yang kita lakukan, kita juga terus akan mendapatkan apa yang kita dapatkan"')
+                ' "Jika kita terus melakukan apa yang kita lakukan, kita juga terus akan mendapatkan apa yang kita dapatkan" '
+                ' --- '
+                ' Berikut mata kuliah menjadi prasyarat dan setara saat di semester 4 : '
+                ' Mata kuliah Pemodelan Sistem harus diambil setara dengan mata kuliah Penelitian Operasional dan Analitika Data. ' 
+                ' Mata kuliah Penelitian Operasional 1 menjadi prasyarat untuk mata kuliah Penelitian Operasional 2. '
+                ' Mata kuliah Statistika 1 menjadi prasayarat untuk mata kuliah Statistika 2.  '
+                ' Mata kuliah Perencanaan dan Pengendalian Produksi menjadi prasayarat untuk mata kuliah Pengendalian dan Penjaminan Mutu dan harus diambil bersamaan dengan Statistika 2.  '
+                ' Mata kuliah Ergonomi 1 menjadi prasyarat untuk mata kuliah Ergonomi 2. '
+                ' Mata kuliah Statistika 1 dan Pemrograman Komputer menjadi prasyarat untuk mata kuliah Analitika Data. '
+                ' Mata kuliah Pemroragaman Komputer menjadi prasyarat mata kuliah Analisis dan Perancangan Sistem Informasi dan harus diambil setara dengan mata kuliah Pemodelan Sistem. '
+                ' Mata Kuliah Analisis dan Perancangan Sistem Informasi harus diambil setara dengan mata kuliah Praktikum Analisis dan Perancangan Sistem Informasi. '
 
         pesan_hasil = f'{SEMESTER_3_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img3 = Image.open('SYARAT NILAI.jpg')
+        st.image(img3, use_column_width=True) 
+
+        img6 = Image.open('MKP_SEM4..jpg')
+        st.image(img6, use_column_width=True)
 
 if (selected == 'SEMESTER 4'):
 
