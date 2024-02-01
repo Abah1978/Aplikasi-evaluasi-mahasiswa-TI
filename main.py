@@ -291,8 +291,7 @@ if (selected == 'SEMESTER 3'):
                 ' Mata kuliah Ergonomi 1 menjadi prasyarat untuk mata kuliah Ergonomi 2. '
                 ' Mata kuliah Statistika 1 dan Pemrograman Komputer menjadi prasyarat untuk mata kuliah Analitika Data. '
                 ' Mata kuliah Pemroragaman Komputer menjadi prasyarat mata kuliah Analisis dan Perancangan Sistem Informasi dan harus diambil setara dengan mata kuliah Pemodelan Sistem. '
-                ' Mata Kuliah Analisis dan Perancangan Sistem Informasi harus diambil setara dengan mata kuliah Praktikum Analisis dan Perancangan Sistem Informasi. '
-
+                ' Mata Kuliah Analisis dan Perancangan Sistem Informasi harus diambil setara dengan mata kuliah Praktikum Analisis dan Perancangan Sistem Informasi. ')
         else:
             SEMESTER_3_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 4.   '
             MOTIVASI = (
