@@ -426,7 +426,7 @@ if (selected == 'SEMESTER 4'):
         total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
                      Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur + 
                      Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 +
-                     Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data
+                     Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data +
                      Praktikum_Analisis_dan_Perancangan_Sistem_Informasi + Statistika_2) / 31
 
         # Check if the total GPA is greater than or equal to 3.0
