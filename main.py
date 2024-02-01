@@ -183,7 +183,7 @@ if (selected == 'SEMESTER 2'):
             SEMESTER_2_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 3'
             MOTIVASI = (
                         ' Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '             
-                        ' Menjadi mahasiswa tidaklah mudah, namun semua bisa dilalui oleh mereka yang semangatnya yang tak akan goyah')
+                        ' Menjadi mahasiswa tidaklah mudah, namun semua bisa dilalui oleh mereka yang semangatnya yang tak akan goyah.  '
                         ' --- '
                         ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 3 :'
                         ' Nilai pada mata kuliah Kalkulus 2 menjadi prasyarat pada mata kuliah Kalkulus 3 dan Statistika 1. '
