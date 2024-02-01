@@ -432,7 +432,7 @@ if (selected == 'SEMESTER 4'):
         # Check if the total GPA is greater than or equal to 3.0
 
         if total_gpa < 3.00:
-            SEMESTER_4_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI  '
+            SEMESTER_4_PREDICTION = 'NILAI MU MASIH HARUS DIPERBAIKI  '
             MOTIVASI = (
                 ' Jangan patah semangat, terus perbaiki nilaimu. '
                 ' ---- '
@@ -623,7 +623,7 @@ if (selected == 'SEMESTER 5'):
         # Check if the total GPA is greater than or equal to 3.0
 
         if total_gpa < 3.00:
-            SEMESTER_5_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
+            SEMESTER_5_PREDICTION = 'NILAI MU HARUS BANYAK DIPERBAIKI'
             MOTIVASI = (
                 ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang.  '
                 ' Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir.  '
@@ -632,7 +632,7 @@ if (selected == 'SEMESTER 5'):
                 ' Nilai mata kuliah Analisis Biaya menjadi prasyarat untuk mata kuliah Ekonomika dan Ekonomi Teknik. '
                 ' Nilai mata kuliah Perilaku Organisasi, Pemodelan Sistem, dan Simulasi Sistem menjadi prasyarat untuk mata kuliah Perancangan dan Manajemen Organisasi Industri. ')
         else:
-            SEMESTER_5_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU!'
+            SEMESTER_5_PREDICTION = 'NILAI MU SUDAH BAGUS '
             MOTIVASI = (
                 ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
                 ' Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikuti teman!!'
@@ -811,34 +811,40 @@ if (selected == 'SEMESTER 6'):
                      Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 +
                      Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data +
                      Praktikum_Analisis_dan_Perancangan_Sistem_Informasi + Statistika_2 + Keselamatan_dan_Keamanan_Kerja + Ergonomi_2 + Perancangan_dan_Pengembangan_Produk +
-                     Perancangan_Tata_Letak_Fasilitas + Simulasi_Sistem + Sistem_Produksi + Perilaku_Organisasi + Praktikum_Tata_Letak_Fasilitas + Praktikum_Terintegarasi) / 4
+                     Perancangan_Tata_Letak_Fasilitas + Simulasi_Sistem + Sistem_Produksi + Perilaku_Organisasi + Praktikum_Tata_Letak_Fasilitas + Praktikum_Terintegarasi + 
+                     Kerja_Praktek + Ekonomika_dan_Ekonomi_Teknik + Perancangan_dan_Manajemen_Organisasi_Industri) / 42
 
         # Check if the total GPA is greater than or equal to 3.0
 
         if total_gpa < 3.00:
-            SEMESTER_6_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
+            SEMESTER_6_PREDICTION = 'NILAIMU HARUS BANYAK DIPERBAIKI, AYO BERTAHAN SEDIKIT LAGI'
             MOTIVASI = (
                 ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang. '
-                'Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir. '
-                '"Mau tidak mau kita harus segera menyelesaikan kuliah agar tidak memberatkan biaya"')
-            img3 = Image.open('SYARAT NILAI.jpg')
-            st.image(img3, use_column_width=True) 
+                ' Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir. '
+                ' "Mau tidak mau kita harus segera menyelesaikan kuliah agar tidak memberatkan biaya" ')
+
             
         else:
-            SEMESTER_6_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU!'
+            SEMESTER_6_PREDICTION = 'NILAI MU SUDAH BAGUS !'
             MOTIVASI = (
                 ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
-                'Pikirkan dengan matang, apa topik yang akan kamu teliti di skripsi. '
+                ' Pikirkan dengan matang, apa topik yang akan kamu teliti di skripsi. '
                 '"Jangan jadikan skripsi menjadi hantu di akhir semestermu."')
 
         pesan_hasil = f'{SEMESTER_6_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
 
+        img3 = Image.open('SYARAT NILAI.jpg')
+        st.image(img3, use_column_width=True) 
+
+        img8 = Image.open('MKP_SEM6.jpg')
+        st.image(img8, use_column_width=True)
+
 if (selected == 'SEMESTER 7'):
 
     # Page title
-    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 7 Teknik Industri UNTIRTA')
+    st.title('Evaluasi Pembelajaran Mahasiswa SEMESTER 7 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1',
                                   ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
