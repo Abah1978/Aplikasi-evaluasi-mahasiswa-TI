@@ -276,7 +276,7 @@ if (selected == 'SEMESTER 3'):
                                                      Penelitian_Operasional_1, Perencanaan_dan_Pengendalian_Produksi, Sistem_Rantai_Pasok,
                                                      Ergonomi_1, Kalkulus_3, Statistika_1]])
 
-        if SEMESTER_3_prediction[0] == 1:
+        if SEMESTER_3_prediction[0] == 0:
             SEMESTER_3_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI  '
             MOTIVASI = (
                 ' Jangan patah semangat, terus perbaiki nilaimu. '
