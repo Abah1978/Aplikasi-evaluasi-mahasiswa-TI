@@ -292,8 +292,6 @@ if (selected == 'SEMESTER 3'):
         # Check if the total GPA is greater than or equal to 3.0
 
         if total_gpa < 3.00:
-        
-        if SEMESTER_3_prediction[0] == 0:
             SEMESTER_3_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI  '
             MOTIVASI = (
                 ' Jangan patah semangat, terus perbaiki nilaimu. '
