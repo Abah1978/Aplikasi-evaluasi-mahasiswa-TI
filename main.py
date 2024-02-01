@@ -423,7 +423,15 @@ if (selected == 'SEMESTER 4'):
                                                      Pemodelan_Sistem, Penelitian_Operasional_2, Pengendalian_dan_Penjaminan_Mutu, Ergonomi_2,
                                                      Analitika_Data, Praktikum_Analisis_dan_Perancangan_Sistem_Informasi, Statistika_2]])
 
-        if SEMESTER_4_prediction[0] == 0:
+        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
+                     Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur + 
+                     Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 +
+                     Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data
+                     Praktikum_Analisis_dan_Perancangan_Sistem_Informasi + Statistika_2) / 31
+
+        # Check if the total GPA is greater than or equal to 3.0
+
+        if total_gpa < 3.00:
             SEMESTER_4_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI  '
             MOTIVASI = (
                 ' Jangan patah semangat, terus perbaiki nilaimu. '
@@ -529,12 +537,6 @@ if (selected == 'SEMESTER 5'):
     '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Perancangan_Tata_Letak_Fasilitas = st.selectbox('Perancangan Tata Letak Fasilitas', (
     '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
-    Kerja_Praktek = st.selectbox('Kerja Praktek', (
-    '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
-    Ekonomika_dan_Ekonomi_Teknik = st.selectbox('Ekonomika dan Ekonomi Teknik', (
-    '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
-    Perancangan_dan_Manajemen_Organisasi_Industri = st.selectbox('Perancangan dan Manajemen Organisasi Industri', (
-    '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Simulasi_Sistem = st.selectbox('Simulasi Sistem',
                                    ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Sistem_Produksi = st.selectbox('Sistem Produksi',
@@ -545,7 +547,6 @@ if (selected == 'SEMESTER 5'):
     '4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
     Praktikum_Terintegarasi = st.selectbox('Praktikum Terintegrasi',
                                            ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
-
 
     # Code for prediction
     SEMESTER_5_PREDICTION = ''
@@ -598,9 +599,6 @@ if (selected == 'SEMESTER 5'):
         Perilaku_Organisasi = float(Perilaku_Organisasi)
         Praktikum_Tata_Letak_Fasilitas = float(Perancangan_Tata_Letak_Fasilitas)
         Praktikum_Terintegarasi = float(Praktikum_Terintegarasi)
-        Kerja_Praktek = float(Kerja_Praktek)
-        Ekonomika_dan_Ekonomi_Teknik = float(Ekonomika_dan_Ekonomi_Teknik)
-        Perancangan_dan_Manajemen_Organisasi_Industri = float(Perancangan_dan_Manajemen_Organisasi_Industri)
 
         SEMESTER_5_prediction = SEMESTER_5.predict(
             [[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri,
@@ -613,11 +611,18 @@ if (selected == 'SEMESTER 5'):
               Analitika_Data, Praktikum_Analisis_dan_Perancangan_Sistem_Informasi, Statistika_2,
               Keselamatan_dan_Keamanan_Kerja, Ergonomi_2,
               Perancangan_dan_Pengembangan_Produk, Perancangan_Tata_Letak_Fasilitas, Simulasi_Sistem,
-              Sistem_Produksi, Perilaku_Organisasi, Praktikum_Tata_Letak_Fasilitas, Praktikum_Terintegarasi,
-              Kerja_Praktek, Ekonomika_dan_Ekonomi_Teknik, Perancangan_dan_Manajemen_Organisasi_Industri]])
+              Sistem_Produksi, Perilaku_Organisasi, Praktikum_Tata_Letak_Fasilitas, Praktikum_Terintegarasi]])
 
+        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
+                     Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur + 
+                     Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 +
+                     Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data
+                     Praktikum_Analisis_dan_Perancangan_Sistem_Informasi + Statistika_2 + Keselamatan_dan_Keamanan_Kerja + Perancangan_dan_Pengembangan_Produk +
+                     Perancangan_Tata_Letak_Fasilitas + Simulasi_Sistem + Sistem_Produksi + Perilaku_Organisasi + Praktikum_Tata_Letak_Fasilitas + Praktikum_Terintegarasi) / 39
 
-        if SEMESTER_5_prediction[0] == 0:
+        # Check if the total GPA is greater than or equal to 3.0
+
+        if total_gpa < 3.00:
             SEMESTER_5_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
             MOTIVASI = (
                 ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang.  '
@@ -643,10 +648,13 @@ if (selected == 'SEMESTER 5'):
         img3 = Image.open('SYARAT NILAI.jpg')
         st.image(img3, use_column_width=True) 
 
+        img8 = Image.open('MKP_SEM6.jpg')
+        st.image(img8, use_column_width=True)
+
 if (selected == 'SEMESTER 6'):
 
     # Page title
-    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 6 Teknik Industri UNTIRTA')
+    st.title('Evaluasi Pembelajaran Mahasiswa SEMESTER 6 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1',
                                   ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -734,7 +742,7 @@ if (selected == 'SEMESTER 6'):
 
     # Creating a button for prediction
 
-    if st.button('KLASIFIKASI KELULUSAN'):
+    if st.button('EVALUASI'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -797,8 +805,17 @@ if (selected == 'SEMESTER 6'):
               Perancangan_dan_Pengembangan_Produk, Perancangan_Tata_Letak_Fasilitas, Simulasi_Sistem,
               Sistem_Produksi, Perilaku_Organisasi, Praktikum_Tata_Letak_Fasilitas, Praktikum_Terintegarasi,
               Kerja_Praktek, Ekonomika_dan_Ekonomi_Teknik, Perancangan_dan_Manajemen_Organisasi_Industri]])
+        
+        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
+                     Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur + 
+                     Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 +
+                     Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data
+                     Praktikum_Analisis_dan_Perancangan_Sistem_Informasi + Statistika_2 + Keselamatan_dan_Keamanan_Kerja + Ergonomi_2 + Perancangan_dan_Pengembangan_Produk +
+                     Perancangan_Tata_Letak_Fasilitas + Simulasi_Sistem + Sistem_Produksi + Perilaku_Organisasi + Praktikum_Tata_Letak_Fasilitas + Praktikum_Terintegarasi) / 4
 
-        if SEMESTER_6_prediction[0] == 0:
+        # Check if the total GPA is greater than or equal to 3.0
+
+        if total_gpa < 3.00:
             SEMESTER_6_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
             MOTIVASI = (
                 ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang. '
