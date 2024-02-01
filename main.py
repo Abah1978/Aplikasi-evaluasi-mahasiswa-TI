@@ -78,7 +78,11 @@ if (selected == 'SEMESTER 1'):
 
         SEMESTER_1_prediction = SEMESTER_1.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri, Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman]])
         
-        if SEMESTER_1_prediction[0] == 0:
+        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman) / 8
+
+        # Check if the total GPA is greater than or equal to 3.0
+
+        if total_gpa < 2.75::
             SEMESTER_1_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
             MOTIVASI = (' '
                         ' Ada beberapa mata kuliah yang menjadi prasayarat dalam mata kuliah lain dan harus diperhatikan untuk menaikan nilai IPK.'
@@ -448,7 +452,7 @@ if (selected == 'SEMESTER 4'):
 if (selected == 'SEMESTER 5'):
 
     # Page title
-    st.title('Klasifikasi Kelulusan Mahasiswa SEMESTER 5 Teknik Industri UNTIRTA')
+    st.title('Evaluasi Pembelajaran Mahasiswa SEMESTER 5 Teknik Industri UNTIRTA')
 
     Fisika_Dasar_1 = st.selectbox('Fisika Dasar 1',
                                   ('4.00', '3.75', '3.50', '3.00', '2.75', '2.50', '2.00', '1.00', '0.00'))
@@ -537,7 +541,7 @@ if (selected == 'SEMESTER 5'):
 
     # Creating a button for prediction
 
-    if st.button('KLASIFIKASI KELULUSAN'):
+    if st.button('EVALUASI'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
@@ -605,20 +609,28 @@ if (selected == 'SEMESTER 5'):
         if SEMESTER_5_prediction[0] == 0:
             SEMESTER_5_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
             MOTIVASI = (
-                ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang. '
-                'Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir')
-            img3 = Image.open('SYARAT NILAI.jpg')
-            st.image(img3, use_column_width=True) 
+                ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang.  '
+                ' Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir.  '
+                ' --- '
+                ' Berikut mata kuliah menjadi prasyarat dan setara saat di semester 6 : '
+                ' Nilai mata kuliah Analisis Biaya menjadi prasyarat untuk mata kuliah Ekonomika dan Ekonomi Teknik. '
+                ' Nilai mata kuliah Perilaku Organisasi, Pemodelan Sistem, dan Simulasi Sistem menjadi prasyarat untuk mata kuliah Perancangan dan Manajemen Organisasi Industri. ')
         else:
             SEMESTER_5_PREDICTION = 'SELAMAT KAMU DIPREDIKSI LULUS TEPAT WAKTU!'
             MOTIVASI = (
                 ' Kamu telah melalui lebih dari 20 sks dengan baik. Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. '
-                'Kamu bisa mengambil lebih dari 20 sks untuk semester 6. '
-                'Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikuti teman!!')
+                ' Pilihlah mata kuliah pilihan sesuai dengan passion mu, jangan mengikuti teman!!'
+                ' --- '
+                ' Berikut mata kuliah menjadi prasyarat dan setara saat di semester 6 : '
+                ' Nilai mata kuliah Analisis Biaya menjadi prasyarat untuk mata kuliah Ekonomika dan Ekonomi Teknik. '
+                ' Nilai mata kuliah Perilaku Organisasi, Pemodelan Sistem, dan Simulasi Sistem menjadi prasyarat untuk mata kuliah Perancangan dan Manajemen Organisasi Industri. ')
 
         pesan_hasil = f'{SEMESTER_5_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
+
+        img3 = Image.open('SYARAT NILAI.jpg')
+        st.image(img3, use_column_width=True) 
 
 if (selected == 'SEMESTER 6'):
 
