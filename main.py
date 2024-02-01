@@ -164,7 +164,7 @@ if (selected == 'SEMESTER 2'):
                                                      Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
                                                      Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur]])
 
-        if SEMESTER_2_prediction[0] == 0:
+        if SEMESTER_2_prediction[0] == 1:
             SEMESTER_2_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
             MOTIVASI = (
                         ' Jangan patah semangat, terus perbaiki nilaimu.'
