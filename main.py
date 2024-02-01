@@ -82,7 +82,7 @@ if (selected == 'SEMESTER 1'):
 
         # Check if the total GPA is greater than or equal to 3.0
 
-        if total_gpa < 2.75:
+        if total_gpa < 3.00:
             SEMESTER_1_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
             MOTIVASI = (' '
                         ' Ada beberapa mata kuliah yang menjadi prasayarat dalam mata kuliah lain dan harus diperhatikan untuk menaikan nilai IPK.'
@@ -168,7 +168,12 @@ if (selected == 'SEMESTER 2'):
                                                      Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
                                                      Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur]])
 
-        if SEMESTER_2_prediction[0] == 1:
+        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman
+                     Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur) / 16
+
+        # Check if the total GPA is greater than or equal to 3.0
+
+        if total_gpa < 3.00:
             SEMESTER_2_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
             MOTIVASI = (
                         ' Jangan patah semangat, terus perbaiki nilaimu.'
