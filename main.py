@@ -152,17 +152,12 @@ if (selected == 'SEMESTER 2'):
         Ekologi_Industri = float(Ekologi_Industri)
         Praktikum_Proses_Manufaktur = float(Praktikum_Proses_Manufaktur)
 
-        SEMESTER_2_prediction = SEMESTER_2.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri,
-                                                     Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman,
-                                                     Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
-                                                     Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur]])
-
-        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
+        total_gpa_2 = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
                      Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur) / 16
 
         # Check if the total GPA is greater than or equal to 3.0
 
-        if total_gpa < 3.00:
+        if total_gpa_2 < 3.00:
             SEMESTER_2_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
             MOTIVASI = (
                         ' Jangan patah semangat, terus perbaiki nilaimu.'
@@ -266,21 +261,13 @@ if (selected == 'SEMESTER 3'):
         Kalkulus_3 = float(Kalkulus_3)
         Statistika_1 = float(Statistika_1)
 
-
-        SEMESTER_3_prediction = SEMESTER_3.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri,
-                                                     Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman,
-                                                     Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
-                                                     Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur, Analisis_Biaya,
-                                                     Penelitian_Operasional_1, Perencanaan_dan_Pengendalian_Produksi, Sistem_Rantai_Pasok,
-                                                     Ergonomi_1, Kalkulus_3, Statistika_1]])
-
-        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
+        total_gpa_3 = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
                      Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur + 
                      Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 ) / 23
 
         # Check if the total GPA is greater than or equal to 3.0
 
-        if total_gpa < 3.00:
+        if total_gpa_3 < 3.00:
             SEMESTER_3_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI  '
             MOTIVASI = (
                 ' Jangan patah semangat, terus perbaiki nilaimu. '
@@ -403,16 +390,7 @@ if (selected == 'SEMESTER 4'):
         Praktikum_Analisis_dan_Perancangan_Sistem_Informasi = float(Praktikum_Analisis_dan_Perancangan_Sistem_Informasi)
         Statistika_2 = float(Statistika_2)
 
-        SEMESTER_4_prediction = SEMESTER_4.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri,
-                                                     Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman,
-                                                     Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
-                                                     Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur, Analisis_Biaya,
-                                                     Penelitian_Operasional_1, Perencanaan_dan_Pengendalian_Produksi, Sistem_Rantai_Pasok,
-                                                     Ergonomi_1, Kalkulus_3, Statistika_1, Analisis_dan_Perancangan_Sistem_Informasi,
-                                                     Pemodelan_Sistem, Penelitian_Operasional_2, Pengendalian_dan_Penjaminan_Mutu, Ergonomi_2,
-                                                     Analitika_Data, Praktikum_Analisis_dan_Perancangan_Sistem_Informasi, Statistika_2]])
-
-        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
+        total_gpa_4 = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
                      Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur + 
                      Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 +
                      Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data +
@@ -420,7 +398,7 @@ if (selected == 'SEMESTER 4'):
 
         # Check if the total GPA is greater than or equal to 3.0
 
-        if total_gpa < 3.00:
+        if total_gpa_4 < 3.00:
             SEMESTER_4_PREDICTION = 'NILAI MU MASIH HARUS DIPERBAIKI  '
             MOTIVASI = (
                 ' Jangan patah semangat, terus perbaiki nilaimu. '
@@ -589,20 +567,7 @@ if (selected == 'SEMESTER 5'):
         Praktikum_Tata_Letak_Fasilitas = float(Perancangan_Tata_Letak_Fasilitas)
         Praktikum_Terintegarasi = float(Praktikum_Terintegarasi)
 
-        SEMESTER_5_prediction = SEMESTER_5.predict(
-            [[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri,
-              Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman,
-              Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
-              Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur, Analisis_Biaya,
-              Penelitian_Operasional_1, Perencanaan_dan_Pengendalian_Produksi, Sistem_Rantai_Pasok,
-              Ergonomi_1, Kalkulus_3, Statistika_1, Analisis_dan_Perancangan_Sistem_Informasi,
-              Pemodelan_Sistem, Penelitian_Operasional_2, Pengendalian_dan_Penjaminan_Mutu,
-              Analitika_Data, Praktikum_Analisis_dan_Perancangan_Sistem_Informasi, Statistika_2,
-              Keselamatan_dan_Keamanan_Kerja, Ergonomi_2,
-              Perancangan_dan_Pengembangan_Produk, Perancangan_Tata_Letak_Fasilitas, Simulasi_Sistem,
-              Sistem_Produksi, Perilaku_Organisasi, Praktikum_Tata_Letak_Fasilitas, Praktikum_Terintegarasi]])
-
-        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
+        total_gpa_5 = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
                      Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur + 
                      Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 +
                      Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data +
@@ -611,7 +576,7 @@ if (selected == 'SEMESTER 5'):
 
         # Check if the total GPA is greater than or equal to 3.0
 
-        if total_gpa < 3.00:
+        if total_gpa_5 < 3.00:
             SEMESTER_5_PREDICTION = 'NILAI MU HARUS BANYAK DIPERBAIKI'
             MOTIVASI = (
                 ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang.  '
@@ -781,21 +746,8 @@ if (selected == 'SEMESTER 6'):
         Ekonomika_dan_Ekonomi_Teknik = float(Ekonomika_dan_Ekonomi_Teknik)
         Perancangan_dan_Manajemen_Organisasi_Industri = float(Perancangan_dan_Manajemen_Organisasi_Industri)
 
-        SEMESTER_6_prediction = SEMESTER_6.predict(
-            [[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri,
-              Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman,
-              Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
-              Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur, Analisis_Biaya,
-              Penelitian_Operasional_1, Perencanaan_dan_Pengendalian_Produksi, Sistem_Rantai_Pasok,
-              Ergonomi_1, Kalkulus_3, Statistika_1, Analisis_dan_Perancangan_Sistem_Informasi,
-              Pemodelan_Sistem, Penelitian_Operasional_2, Pengendalian_dan_Penjaminan_Mutu,
-              Analitika_Data, Praktikum_Analisis_dan_Perancangan_Sistem_Informasi, Statistika_2,
-              Keselamatan_dan_Keamanan_Kerja, Ergonomi_2,
-              Perancangan_dan_Pengembangan_Produk, Perancangan_Tata_Letak_Fasilitas, Simulasi_Sistem,
-              Sistem_Produksi, Perilaku_Organisasi, Praktikum_Tata_Letak_Fasilitas, Praktikum_Terintegarasi,
-              Kerja_Praktek, Ekonomika_dan_Ekonomi_Teknik, Perancangan_dan_Manajemen_Organisasi_Industri]])
-        
-        total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
+    
+        total_gpa_6 = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
                      Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur + 
                      Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 +
                      Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data +
@@ -805,13 +757,12 @@ if (selected == 'SEMESTER 6'):
 
         # Check if the total GPA is greater than or equal to 3.0
 
-        if total_gpa < 3.00:
+        if total_gpa_6 < 3.00:
             SEMESTER_6_PREDICTION = 'NILAIMU HARUS BANYAK DIPERBAIKI, AYO BERTAHAN SEDIKIT LAGI'
             MOTIVASI = (
                 ' Sedikit lagi sudah berada di titik akhir, coba perbaiki nilaimu yang masih kurang. '
                 ' Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir. '
                 ' "Mau tidak mau kita harus segera menyelesaikan kuliah agar tidak memberatkan biaya" ')
-
             
         else:
             SEMESTER_6_PREDICTION = 'NILAI MU SUDAH BAGUS !'
@@ -977,21 +928,17 @@ if (selected == 'SEMESTER 7'):
         Metodologi_Penelitian = float(Metodologi_Penelitian)
         Perancangan_Sistem_Terpadu = float(Perancangan_Sistem_Terpadu)
 
-        SEMESTER_7_prediction = SEMESTER_7.predict(
-            [[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri,
-              Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman,
-              Aljabar_Linear, Fisika_Dasar_2, Kalkulus_2, Mekanika_Teknik, Praktikum_Fisika_Dasar,
-              Proses_Manufaktur, Ekologi_Industri, Praktikum_Proses_Manufaktur, Analisis_Biaya,
-              Penelitian_Operasional_1, Perencanaan_dan_Pengendalian_Produksi, Sistem_Rantai_Pasok,
-              Ergonomi_1, Kalkulus_3, Statistika_1, Analisis_dan_Perancangan_Sistem_Informasi,
-              Pemodelan_Sistem, Penelitian_Operasional_2, Pengendalian_dan_Penjaminan_Mutu,
-              Analitika_Data, Praktikum_Analisis_dan_Perancangan_Sistem_Informasi, Statistika_2, Ergonomi_2,
-              Keselamatan_dan_Keamanan_Kerja, Perancangan_dan_Pengembangan_Produk, Perancangan_Tata_Letak_Fasilitas,
-              Simulasi_Sistem, Sistem_Produksi, Perilaku_Organisasi, Praktikum_Tata_Letak_Fasilitas,
-              Praktikum_Terintegarasi, Kerja_Praktek, Ekonomika_dan_Ekonomi_Teknik,
-              Perancangan_dan_Manajemen_Organisasi_Industri, Metodologi_Penelitian, Perancangan_Sistem_Terpadu]])
+         total_gpa_7 = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman +
+                     Aljabar_Linear + Fisika_Dasar_2 + Kalkulus_2 + Mekanika_Teknik + Praktikum_Fisika_Dasar + Proses_Manufaktur + Ekologi_Industri + Praktikum_Proses_Manufaktur + 
+                     Analisis_Biaya + Penelitian_Operasional_1 + Perencanaan_dan_Pengendalian_Produksi + Sistem_Rantai_Pasok + Ergonomi_1 + Kalkulus_3 + Statistika_1 +
+                     Analisis_dan_Perancangan_Sistem_Informasi + Pemodelan_Sistem + Penelitian_Operasional_2 + Pengendalian_dan_Penjaminan_Mutu + Ergonomi_2 + Analitika_Data +
+                     Praktikum_Analisis_dan_Perancangan_Sistem_Informasi + Statistika_2 + Keselamatan_dan_Keamanan_Kerja + Ergonomi_2 + Perancangan_dan_Pengembangan_Produk +
+                     Perancangan_Tata_Letak_Fasilitas + Simulasi_Sistem + Sistem_Produksi + Perilaku_Organisasi + Praktikum_Tata_Letak_Fasilitas + Praktikum_Terintegarasi + 
+                     Kerja_Praktek + Ekonomika_dan_Ekonomi_Teknik + Perancangan_dan_Manajemen_Organisasi_Industri + Metodologi_Penelitian + Perancangan_Sistem_Terpadu) / 44
 
-        if SEMESTER_7_prediction[0] == 0:
+        # Check if the total GPA is greater than or equal to 3.0
+      
+        if total_gpa_7 < 3.00:
             SEMESTER_7_PREDICTION = 'KAMU DIPREDIKSI LULUS TIDAK TEPAT WAKTU!'
             MOTIVASI = (
                 ' Mungkin akan sedikit terlambat, tapi pelan pelan kamu pasti bisa mencapai titik akhir.'
