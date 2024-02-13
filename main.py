@@ -66,9 +66,7 @@ if (selected == 'SEMESTER 1'):
         Menggambar_Teknik = float(Menggambar_Teknik)
         Praktikum_Menggambar_Teknik = float(Praktikum_Menggambar_Teknik)
         Logika_Pemrograman = float(Logika_Pemrograman)
-
-        SEMESTER_1_prediction = SEMESTER_1.predict([[Fisika_Dasar_1, Kalkulus_1, Kimia_Dasar, Material_Teknik, Pengantar_Teknik_Industri, Menggambar_Teknik, Praktikum_Menggambar_Teknik, Logika_Pemrograman]])
-        
+      
         total_gpa = (Fisika_Dasar_1 + Kalkulus_1 + Kimia_Dasar + Material_Teknik + Pengantar_Teknik_Industri + Menggambar_Teknik + Praktikum_Menggambar_Teknik + Logika_Pemrograman) / 8
 
         # Check if the total GPA is greater than or equal to 3.0
