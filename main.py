@@ -873,7 +873,7 @@ if (selected == 'SEMESTER 7'):
 
     # Creating a button for prediction
 
-    if st.button('Klasifikasi KELULUSAN'):
+    if st.button('EVALUASI'):
         if 'name' in st.session_state:
             st.write(f"Halo {st.session_state.name}!")
 
