@@ -98,9 +98,6 @@ if (selected == 'SEMESTER 1'):
         img3 = Image.open('SYARAT NILAI.jpg')
         st.image(img3, use_column_width=True) 
         
-        img4 = Image.open('MKP_SEM2.jpg')
-        st.image(img4, use_column_width=True)
-        
 if (selected == 'SEMESTER 2'):
 
     # Page title
