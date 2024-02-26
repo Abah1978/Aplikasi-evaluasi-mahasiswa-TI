@@ -74,29 +74,16 @@ if (selected == 'SEMESTER 1'):
         if total_gpa < 3.00:
             SEMESTER_1_PREDICTION = 'MASIH BANYAK NILAI YANG HARUS DIPERBAIKI'
             MOTIVASI = (' '
-                        ' Ada beberapa mata kuliah yang menjadi prasayarat dalam mata kuliah lain dan harus diperhatikan untuk menaikan nilai IPK.'
-                        ' Berikut mata kuliah menjadi prasayarat dan setara saat di semester 2 : '
-                        ' Nilai pada mata kuliah Menggambar Teknik menjadi prasyarat untuk  mata kuliah Mekanika Teknik. '
-                        ' Mata kuliah Kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
-                        ' Nilai pada mata kuliah Material Teknik menjadi prasyarat pada mata kuliah Proses Manufaktur dan harus diambil berbarengan dengan mata kuliah Mekanika Teknik. '
-                        ' Mata kuliah Praktikum Proses Manufaktur harus diambil bersamaan dengan mata kuliah Proses Manufaktur. ')
+                        ' Teruslah belajar dan tingkatkan nilaimu ')
   
         else:
             SEMESTER_1_PREDICTION = 'NILAI MU SUDAH BAGUS DAN KAMU DAPAT MENGAMBIL LEBIH DARI 20 SKS UNTUK SEMESTER 2'
             MOTIVASI = (' '
-                        ' Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan.'
-                        ' Berikut mata kuliah menjadi prasyarat dan setara saat di semester 2 : '
-                        ' Nilai pada mata kuliah Menggambar Teknik menjadi prasyarat untuk  mata kuliah Mekanika Teknik. '
-                        ' Mata kuliah Kalkulus 2 harus diambil bersamaan dengan mata kuliah aljabar linear. '
-                        ' Nilai pada mata kuliah Material Teknik menjadi prasyarat pada mata kuliah Proses Manufaktur dan harus diambil berbarengan dengan mata kuliah Mekanika Teknik. '
-                        ' Mata kuliah Praktikum Proses Manufaktur harus diambil bersamaan dengan mata kuliah Proses Manufaktur. ')
+                        ' Pertahankan dan tingkatkan kembali nilai-nilai di semester kedepan. ')
             
         pesan_hasil = f'{SEMESTER_1_PREDICTION}, {MOTIVASI}'
 
         st.success(pesan_hasil)
-        
-        img3 = Image.open('SYARAT NILAI.jpg')
-        st.image(img3, use_column_width=True) 
         
 if (selected == 'SEMESTER 2'):
 
